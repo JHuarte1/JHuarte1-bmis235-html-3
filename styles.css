@@ -11,15 +11,15 @@
 
 body {
     font-family: Georgia, "Bell MT", serif;
-    background-color: #3B3939;
-    color: #0D0D0D;
+    background-color: #08458a;
+    color: #0f0f0f;
     margin: 0;
     padding: 0 20px 40px 20px;
 }
 
 /* the menu at the top of every page */
 nav {
-    background-color: #2360B8;
+    background-color: #bcbfc2;
     padding: 14px;
     text-align: center;
 }
