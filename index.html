@@ -37,36 +37,35 @@ The exotic landscape of Montana makes it one of the best states to play golf in.
      This box is empty on purpose. In Part 7 you paste an interactive
      graphic BETWEEN the opening <div> and the closing </div> below.
      ===================================================================== -->
-<div class=""><!-- HTML: the map card. A Montana outline drawn as SVG, with one clickable star per golf course. -->
+<div class=<!-- HTML: the map card. A Montana outline drawn as SVG, with one clickable yellow star per golf course. -->
 <div class="showcase-map">
-  <svg class="showcase-svg" viewBox="0 0 520 300" role="img" aria-label="Map of Montana with golf courses marked by stars">
+  <svg class="showcase-svg" viewBox="0 0 520 300" role="img" aria-label="Map of Montana with Stock Farm Club, Rock Creek Cattle Company and Iron Horse Golf Club marked by stars">
     <path class="showcase-state" d="M15 12L506 12L506 252L219.6 252L219.6 282L168.5 285L135.7 264L121.4 252L103 222L82.5 216L76.4 156L45.7 117L29.3 102L15 73.2Z"></path>
 
-    <!-- EDIT: change each href to your course's photo page, and each label to the course name. -->
-    <a class="showcase-link" href="https://example.com/course-1" target="_blank" rel="noopener noreferrer" aria-label="Whitefish Lake golf course, opens photos in a new tab">
-      <g transform="translate(84.6 48)">
+    <!-- Iron Horse Golf Club (Whitefish). To change the photo page, edit the href. -->
+    <a class="showcase-link" href="https://www.golfcoursegurus.com/reviews/iron-horse-golf-club" target="_blank" rel="noopener noreferrer" aria-label="Iron Horse Golf Club, opens photos in a new tab">
+      <g transform="translate(126.3 46.2)">
         <circle class="showcase-hit" r="20"></circle>
-        <circle class="showcase-ring" r="14"></circle>
+        <circle class="showcase-ring" r="15"></circle>
         <polygon class="showcase-star" points="0,-10 2.5,-3.4 9.5,-3.1 4,1.3 5.9,8.1 0,4.2 -5.9,8.1 -4,1.3 -9.5,-3.1 -2.5,-3.4"></polygon>
-        <text class="showcase-label" y="26" text-anchor="middle">Whitefish Lake</text>
       </g>
     </a>
 
-    <a class="showcase-link" href="https://example.com/course-2" target="_blank" rel="noopener noreferrer" aria-label="Old Works golf course, opens photos in a new tab">
-      <g transform="translate(141.9 184.2)">
+    <!-- Rock Creek Cattle Company (Deer Lodge). -->
+    <a class="showcase-link" href="https://golfcoursegurus.com/reviews/rock-creek-cattle-company" target="_blank" rel="noopener noreferrer" aria-label="Rock Creek Cattle Company, opens photos in a new tab">
+      <g transform="translate(145.9 163.8)">
         <circle class="showcase-hit" r="20"></circle>
-        <circle class="showcase-ring" r="14"></circle>
+        <circle class="showcase-ring" r="15"></circle>
         <polygon class="showcase-star" points="0,-10 2.5,-3.4 9.5,-3.1 4,1.3 5.9,8.1 0,4.2 -5.9,8.1 -4,1.3 -9.5,-3.1 -2.5,-3.4"></polygon>
-        <text class="showcase-label" y="26" text-anchor="middle">Old Works</text>
       </g>
     </a>
 
-    <a class="showcase-link" href="https://example.com/course-3" target="_blank" rel="noopener noreferrer" aria-label="Briarwood golf course, opens photos in a new tab">
-      <g transform="translate(321.9 207)">
+    <!-- Stock Farm Club (Hamilton). -->
+    <a class="showcase-link" href="https://golfcoursegurus.com/reviews/stock-farm-golf-club" target="_blank" rel="noopener noreferrer" aria-label="Stock Farm Club, opens photos in a new tab">
+      <g transform="translate(94.8 178.8)">
         <circle class="showcase-hit" r="20"></circle>
-        <circle class="showcase-ring" r="14"></circle>
+        <circle class="showcase-ring" r="15"></circle>
         <polygon class="showcase-star" points="0,-10 2.5,-3.4 9.5,-3.1 4,1.3 5.9,8.1 0,4.2 -5.9,8.1 -4,1.3 -9.5,-3.1 -2.5,-3.4"></polygon>
-        <text class="showcase-label" y="26" text-anchor="middle">Briarwood</text>
       </g>
     </a>
   </svg>
@@ -100,7 +99,7 @@ The exotic landscape of Montana makes it one of the best states to play golf in.
   stroke-linejoin: round;
 }
 .showcase .showcase-star {
-  fill: #bcbfc2;
+  fill: #ffc619;
   stroke: #28292e;
   stroke-width: 1;
   transform-box: fill-box;
@@ -110,19 +109,12 @@ The exotic landscape of Montana makes it one of the best states to play golf in.
 .showcase .showcase-link { cursor: pointer; outline: none; }
 .showcase .showcase-link:hover .showcase-star,
 .showcase .showcase-link:focus-visible .showcase-star {
-  transform: scale(1.35);
-  fill: #ffffff;
+  transform: scale(1.4);
+  fill: #ffdc5c;
 }
-.showcase .showcase-ring { fill: none; stroke: #bcbfc2; stroke-width: 1.5; opacity: 0; }
+.showcase .showcase-ring { fill: none; stroke: #ffc619; stroke-width: 1.5; opacity: 0; }
 .showcase .showcase-link:focus-visible .showcase-ring { opacity: 1; }
 .showcase .showcase-hit { fill: transparent; }
-.showcase .showcase-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  fill: #bcbfc2;
-  pointer-events: none;
-}
 .showcase .showcase-hint {
   margin: 8px 0 0;
   font-size: 13px;
@@ -134,7 +126,7 @@ The exotic landscape of Montana makes it one of the best states to play golf in.
 }
 </style>
 
-<!-- JAVASCRIPT: none needed. The map, stars and links are plain HTML, so it works even if your site blocks scripts. --></div>
+<!-- JAVASCRIPT: none needed. The map, stars and links are plain HTML, so it works even if your site blocks scripts. -->></div>
 
 <!-- Footer: fill in your name -->
 <footer>Built by Jack Huarte &middot; BMIS 235</footer>
